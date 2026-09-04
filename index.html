@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Horse Self Drive Jind | Car Rental in Jind, Haryana</title>
+<meta name="description" content="Black Horse Car Rental offers 24×7 self-drive and car-with-driver rental services in Jind, Haryana. Explore Swift, Verna, Scorpio, Fortuner and more.">
+<meta name="keywords" content="self drive car rental Jind, car rental Jind Haryana, car with driver Jind, Black Horse car rental, rent a car Jind, Ram Nagar Jind car rental">
+<meta name="author" content="Black Horse Car Rental">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Black Horse Self Drive Jind | Car Rental in Jind, Haryana">
+<meta property="og:description" content="24×7 self-drive and car-with-driver rental service based in Ram Nagar, Jind, Haryana. Swift, Verna, Scorpio, Fortuner and more.">
+<meta property="og:image" content="images/hero-car.jpg">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Black Horse Car Rental">
+
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#home" class="brand">
+      <img src="images/logo.png" alt="Black Horse Car Rental logo" class="brand__logo">
+      <span class="brand__text">
+        <span class="brand__name">BLACK HORSE</span>
+        <span class="brand__tag">SELF DRIVE JIND</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#fleet">Cars</a>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#" class="btn btn--ghost btn--sm js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query.">
+        <svg class="icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 2.67C8.66 2.67 2.7 8.63 2.7 16c0 2.53.7 4.9 1.93 6.93L2.67 29.3l6.55-1.9A13.27 13.27 0 0 0 16.02 29.3c7.36 0 13.32-5.96 13.32-13.33S23.38 2.67 16.02 2.67z"/></svg>
+        WhatsApp
+      </a>
+      <button class="btn btn--gold btn--sm js-open-modal">Book Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__bg">
+      <img src="images/hero-car.jpg" alt="Premium SUV available for self drive rental in Jind" loading="eager">
+      <div class="hero__overlay"></div>
+      <div class="hero__horse-mark" aria-hidden="true">
+        <svg viewBox="0 0 256 256"><polygon points="128,50 150,60 160,85 175,90 180,105 165,110 170,130 160,150 165,175 150,190 140,200 110,205 95,190 90,165 78,150 85,130 75,115 90,105 95,80 110,60"/></svg>
+      </div>
+    </div>
+
+    <div class="hero__content container">
+      <p class="eyebrow reveal">24×7 SELF DRIVE CAR RENTAL — JIND</p>
+      <h1 class="hero__heading reveal">YOUR JOURNEY.<br>YOUR CAR.<br><span class="text-gold">YOUR RULES.</span></h1>
+      <p class="hero__desc reveal">Premium self-drive and car-with-driver rental service in Jind, Haryana.</p>
+      <p class="hero__location reveal">📍 Ram Nagar, Jind, Haryana</p>
+
+      <div class="hero__ctas reveal">
+        <button class="btn btn--gold btn--lg js-open-modal">Book a Car</button>
+        <a href="#fleet" class="btn btn--outline btn--lg">Explore Fleet</a>
+      </div>
+
+      <p class="hero__meta reveal">24×7 Available &nbsp;•&nbsp; Self Drive &nbsp;•&nbsp; With Driver</p>
+    </div>
+
+    <!-- ============ QUICK BOOKING CARD ============ -->
+    <div class="booking-card reveal" id="bookingCard">
+      <p class="booking-card__title">Find Your Perfect Ride</p>
+
+      <div class="booking-card__field">
+        <label for="qbCar">Car</label>
+        <select id="qbCar">
+          <option value="Maruti Swift">Maruti Swift</option>
+          <option value="Hyundai Verna">Hyundai Verna</option>
+          <option value="Mahindra Scorpio">Mahindra Scorpio</option>
+          <option value="Toyota Fortuner">Toyota Fortuner</option>
+        </select>
+      </div>
+
+      <div class="booking-card__field">
+        <label for="qbType">Rental Type</label>
+        <select id="qbType">
+          <option value="Self Drive">Self Drive</option>
+          <option value="With Driver">With Driver</option>
+        </select>
+      </div>
+
+      <div class="booking-card__row">
+        <div class="booking-card__field">
+          <label for="qbPickup">Pickup Date</label>
+          <input type="date" id="qbPickup">
+        </div>
+        <div class="booking-card__field">
+          <label for="qbReturn">Return Date</label>
+          <input type="date" id="qbReturn">
+        </div>
+      </div>
+
+      <button class="btn btn--gold btn--block" id="checkAvailBtn">Check Availability</button>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust" aria-label="Why choose us at a glance">
+    <div class="container trust__grid">
+      <article class="trust__card reveal">
+        <span class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </span>
+        <h3>24×7 Service</h3>
+        <p>Available whenever you need us.</p>
+      </article>
+      <article class="trust__card reveal">
+        <span class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-6a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 6"/><path d="M3 13h18v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7.5" cy="16.5" r="1"/><circle cx="16.5" cy="16.5" r="1"/></svg>
+        </span>
+        <h3>Self Drive</h3>
+        <p>Drive your journey your way.</p>
+      </article>
+      <article class="trust__card reveal">
+        <span class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        </span>
+        <h3>With Driver</h3>
+        <p>Don't want to drive? We can provide a driver.</p>
+      </article>
+      <article class="trust__card reveal">
+        <span class="trust__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <h3>Jind Based</h3>
+        <p>Serving customers from Jind, Haryana.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FLEET ============ -->
+  <section class="fleet" id="fleet" aria-label="Our fleet">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 / OUR FLEET</p>
+        <h2>CHOOSE YOUR RIDE</h2>
+        <p class="section-head__sub">From city drives to powerful SUVs, find the car that fits your journey.</p>
+      </div>
+
+      <div class="fleet__grid">
+        <article class="car-card reveal">
+          <div class="car-card__media">
+            <img src="images/swift.jpg" alt="Maruti Swift hatchback available for self drive rental" loading="lazy">
+            <span class="car-card__badge">HATCHBACK</span>
+          </div>
+          <div class="car-card__body">
+            <h3>Maruti Swift</h3>
+            <p class="car-card__desc">Nimble, fuel-efficient and easy to drive through the city.</p>
+            <ul class="car-card__specs">
+              <li>5 Seats</li><li>AC</li><li>Petrol</li><li>Manual/Automatic</li>
+            </ul>
+            <div class="car-card__footer">
+              <span class="car-card__price">PRICE ON REQUEST</span>
+              <button class="btn btn--outline btn--sm js-open-modal" data-car="Maruti Swift">Book Swift →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card reveal">
+          <div class="car-card__media">
+            <img src="images/verna.jpg" alt="Hyundai Verna sedan available for self drive rental" loading="lazy">
+            <span class="car-card__badge">SEDAN</span>
+          </div>
+          <div class="car-card__body">
+            <h3>Hyundai Verna</h3>
+            <p class="car-card__desc">A comfortable sedan for smooth highway and city rides.</p>
+            <ul class="car-card__specs">
+              <li>5 Seats</li><li>AC</li><li>Petrol</li><li>Comfortable Interior</li>
+            </ul>
+            <div class="car-card__footer">
+              <span class="car-card__price">PRICE ON REQUEST</span>
+              <button class="btn btn--outline btn--sm js-open-modal" data-car="Hyundai Verna">Book Verna →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card reveal">
+          <div class="car-card__media">
+            <img src="images/scorpio.jpg" alt="Mahindra Scorpio SUV available for self drive rental" loading="lazy">
+            <span class="car-card__badge">SUV</span>
+          </div>
+          <div class="car-card__body">
+            <h3>Mahindra Scorpio</h3>
+            <p class="car-card__desc">A powerful SUV built for family trips and rough roads.</p>
+            <ul class="car-card__specs">
+              <li>7 Seats</li><li>AC</li><li>Powerful SUV</li><li>Spacious Interior</li>
+            </ul>
+            <div class="car-card__footer">
+              <span class="car-card__price">PRICE ON REQUEST</span>
+              <button class="btn btn--outline btn--sm js-open-modal" data-car="Mahindra Scorpio">Book Scorpio →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card reveal">
+          <div class="car-card__media">
+            <img src="images/fortuner.jpg" alt="Toyota Fortuner premium SUV available for self drive rental" loading="lazy">
+            <span class="car-card__badge">PREMIUM SUV</span>
+          </div>
+          <div class="car-card__body">
+            <h3>Toyota Fortuner</h3>
+            <p class="car-card__desc">Our flagship SUV — premium, powerful and commanding.</p>
+            <ul class="car-card__specs">
+              <li>7 Seats</li><li>AC</li><li>Premium Interior</li><li>Powerful SUV</li>
+            </ul>
+            <div class="car-card__footer">
+              <span class="car-card__price">PRICE ON REQUEST</span>
+              <button class="btn btn--outline btn--sm js-open-modal" data-car="Toyota Fortuner">Book Fortuner →</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services" aria-label="Our services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 / SERVICES</p>
+        <h2>MORE THAN JUST SELF DRIVE</h2>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card reveal">
+          <div class="service-card__media">
+            <img src="images/swift.jpg" alt="Self drive car ready to go" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Drive it yourself.</h3>
+            <p>Enjoy the freedom to travel on your own schedule with our self-drive rental service.</p>
+            <ul class="check-list">
+              <li>Freedom to drive</li>
+              <li>Flexible travel</li>
+              <li>Multiple car options</li>
+              <li>24×7 support</li>
+            </ul>
+            <button class="btn btn--gold js-open-modal" data-type="Self Drive">Book Self Drive</button>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__media">
+            <img src="images/scorpio.jpg" alt="Mahindra Scorpio car with driver service for a comfortable ride" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3>Sit back. We'll drive.</h3>
+            <p>For customers who don't want to drive, we can provide a car with a driver.</p>
+            <p class="service-card__suited">Suitable for: Family trips, Weddings, Events, Business travel, Outstation travel, Airport transfers</p>
+            <button class="btn btn--gold js-open-modal" data-type="With Driver">Request Driver</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how" aria-label="How it works">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 / PROCESS</p>
+        <h2>HOW IT WORKS</h2>
+      </div>
+
+      <div class="how__grid">
+        <article class="how__step reveal">
+          <span class="how__num" data-target="1">00</span>
+          <h3>Choose Your Car</h3>
+          <p>Select the car you want.</p>
+        </article>
+        <article class="how__step reveal">
+          <span class="how__num" data-target="2">00</span>
+          <h3>Choose Your Service</h3>
+          <p>Self Drive or With Driver.</p>
+        </article>
+        <article class="how__step reveal">
+          <span class="how__num" data-target="3">00</span>
+          <h3>Select Your Date</h3>
+          <p>Tell us when you need the car.</p>
+        </article>
+        <article class="how__step reveal">
+          <span class="how__num" data-target="4">00</span>
+          <h3>Confirm on WhatsApp</h3>
+          <p>We'll contact you and confirm your booking.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY BLACK HORSE ============ -->
+  <section class="why" aria-label="Why choose Black Horse">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow text-gold">04 / THE DIFFERENCE</p>
+        <h2 class="text-white">WHY BLACK HORSE?</h2>
+      </div>
+
+      <div class="why__grid">
+        <article class="why__card reveal">
+          <h3>24×7 AVAILABLE</h3>
+          <p>We're available whenever you need us.</p>
+        </article>
+        <article class="why__card reveal">
+          <h3>QUALITY CARS</h3>
+          <p>Clean and well-maintained vehicles.</p>
+        </article>
+        <article class="why__card reveal">
+          <h3>SELF DRIVE</h3>
+          <p>Complete freedom on your journey.</p>
+        </article>
+        <article class="why__card reveal">
+          <h3>DRIVER OPTION</h3>
+          <p>Driver available when required.</p>
+        </article>
+        <article class="why__card reveal">
+          <h3>EASY BOOKING</h3>
+          <p>Book through website, WhatsApp or phone.</p>
+        </article>
+        <article class="why__card reveal">
+          <h3>LOCAL SERVICE</h3>
+          <p>Based in Ram Nagar, Jind.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREMIUM CTA ============ -->
+  <section class="cta-band" aria-label="Book your car">
+    <div class="cta-band__bg">
+      <img src="images/hero-car.jpg" alt="" loading="lazy">
+      <div class="cta-band__overlay"></div>
+    </div>
+    <div class="container cta-band__content reveal">
+      <h2>READY TO HIT THE ROAD?</h2>
+      <p>Choose your car. Choose your journey. Let Black Horse take care of the rest.</p>
+      <div class="cta-band__actions">
+        <button class="btn btn--gold btn--lg js-open-modal">Book Your Car</button>
+        <a href="#" class="btn btn--outline btn--lg js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I want to know more about your cars.">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about" aria-label="About Black Horse">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="images/verna.jpg" alt="Hyundai Verna shown in the Black Horse About section" loading="lazy">
+      </div>
+      <div class="about__content reveal">
+        <p class="eyebrow">05 / ABOUT US</p>
+        <h2>ABOUT BLACK HORSE</h2>
+        <p>Black Horse Car Rental is a 24×7 car rental service based in Ram Nagar, Jind, Haryana. We provide self-drive cars for customers who want the freedom to drive themselves, along with car-with-driver options for customers who prefer a comfortable journey without driving.</p>
+        <div class="about__badges">
+          <span class="badge">SELF DRIVE JIND</span>
+          <span class="badge">24×7 SERVICE</span>
+          <span class="badge">CAR + DRIVER AVAILABLE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="insta" aria-label="Follow us on Instagram">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">06 / SOCIAL</p>
+        <h2>FOLLOW BLACK HORSE</h2>
+        <p class="section-head__sub">See our latest cars, updates and offers.</p>
+      </div>
+      <div class="insta__grid">
+        <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener" class="insta__item reveal"><img src="images/swift.jpg" alt="Black Horse Instagram post" loading="lazy"></a>
+        <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener" class="insta__item reveal"><img src="images/verna.jpg" alt="Black Horse Instagram post" loading="lazy"></a>
+        <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener" class="insta__item reveal"><img src="images/scorpio.jpg" alt="Black Horse Instagram post" loading="lazy"></a>
+        <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener" class="insta__item reveal"><img src="images/fortuner.jpg" alt="Black Horse Instagram post" loading="lazy"></a>
+      </div>
+      <div class="insta__cta reveal">
+        <p class="insta__handle">@black_horse_self_drive</p>
+        <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener" class="btn btn--outline">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">07 / FAQ</p>
+        <h2>QUESTIONS, ANSWERED</h2>
+      </div>
+
+      <div class="faq__list" id="faqList">
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>What is self-drive car rental?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>Self-drive car rental means you rent the car and drive it yourself, giving you complete freedom over your route and schedule.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>Do you provide cars with drivers?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>Yes. If you'd rather not drive, we offer a car-with-driver option for family trips, events, business travel and more.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>Where are you located?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>We're based in Ram Nagar, Jind, Haryana – 126102.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>Are you available 24×7?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>Yes, Black Horse Car Rental is available 24×7 for bookings and support.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>How can I book a car?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>You can book through our website's booking form, on WhatsApp, or by calling us directly.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            <span>Can I request an outstation trip?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer"><p>Yes, please share your travel details with us on WhatsApp or by phone and we'll help plan it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact" aria-label="Contact us">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">08 / CONTACT</p>
+        <h2>LET'S GET YOU ON THE ROAD</h2>
+      </div>
+
+      <div class="contact__card reveal">
+        <div class="contact__item">
+          <span class="contact__label">LOCATION</span>
+          <p>Ram Nagar<br>Jind, Haryana – 126102</p>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">CALL</span>
+          <p><a href="tel:+919034749493">+91-9034749493</a><br><a href="tel:+919518627271">+91-9518627271</a></p>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">WHATSAPP</span>
+          <p><a href="#" class="js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query.">+91-9034350803</a></p>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">AVAILABILITY</span>
+          <p>24×7</p>
+        </div>
+
+        <div class="contact__actions">
+          <a href="tel:+919034749493" class="btn btn--gold">Call Now</a>
+          <a href="#" class="btn btn--outline-white js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query.">WhatsApp Now</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ram+Nagar+Jind+Haryana+126102" target="_blank" rel="noopener" class="btn btn--outline-white">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" aria-label="Book your journey">
+    <div class="container reveal">
+      <h2>YOUR NEXT JOURNEY STARTS HERE.</h2>
+      <p>Choose your car. Choose your freedom.</p>
+      <div class="final-cta__actions">
+        <button class="btn btn--gold btn--lg js-open-modal">Book Your Car</button>
+        <a href="#" class="btn btn--outline btn--lg js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I want to book a car.">WhatsApp Now</a>
+        <a href="tel:+919034749493" class="btn btn--outline btn--lg">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="brand">
+        <img src="images/logo.png" alt="Black Horse Car Rental logo" class="brand__logo">
+        <span class="brand__text">
+          <span class="brand__name">BLACK HORSE</span>
+          <span class="brand__tag">SELF DRIVE JIND</span>
+        </span>
+      </div>
+      <p>Premium self-drive and car rental service in Jind, Haryana.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Links</h4>
+      <a href="#home">Home</a>
+      <a href="#fleet">Cars</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="#services">Self Drive</a>
+      <a href="#services">Car With Driver</a>
+      <a href="#fleet">Car Rental</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <p>Ram Nagar, Jind, Haryana</p>
+      <a href="tel:+919034749493">+91-9034749493</a>
+      <a href="tel:+919518627271">+91-9518627271</a>
+      <a href="#" class="js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query.">WhatsApp</a>
+      <a href="https://www.instagram.com/black_horse_self_drive/" target="_blank" rel="noopener">@black_horse_self_drive</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p class="footer__mantra">JAI MAHAKAL 🕉️</p>
+    <p>&copy; <span id="year"></span> Black Horse Car Rental. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="modal" id="bookingModal" aria-hidden="true">
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" id="modalClose" aria-label="Close booking form">&times;</button>
+    <h3 id="modalTitle">BOOK YOUR RIDE</h3>
+    <form id="bookingForm" novalidate>
+      <div class="form__field">
+        <label for="bfName">Name</label>
+        <input type="text" id="bfName" name="name" placeholder="Your full name">
+        <span class="form__error" id="err-name"></span>
+      </div>
+      <div class="form__field">
+        <label for="bfPhone">Phone Number</label>
+        <input type="tel" id="bfPhone" name="phone" placeholder="10-digit mobile number">
+        <span class="form__error" id="err-phone"></span>
+      </div>
+      <div class="form__field">
+        <label for="bfCar">Select Car</label>
+        <select id="bfCar" name="car">
+          <option value="">Choose a car</option>
+          <option value="Maruti Swift">Maruti Swift</option>
+          <option value="Hyundai Verna">Hyundai Verna</option>
+          <option value="Mahindra Scorpio">Mahindra Scorpio</option>
+          <option value="Toyota Fortuner">Toyota Fortuner</option>
+        </select>
+        <span class="form__error" id="err-car"></span>
+      </div>
+      <div class="form__field">
+        <label for="bfType">Rental Type</label>
+        <select id="bfType" name="type">
+          <option value="">Choose a service</option>
+          <option value="Self Drive">Self Drive</option>
+          <option value="With Driver">With Driver</option>
+        </select>
+        <span class="form__error" id="err-type"></span>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <label for="bfPickup">Pickup Date</label>
+          <input type="date" id="bfPickup" name="pickup">
+          <span class="form__error" id="err-pickup"></span>
+        </div>
+        <div class="form__field">
+          <label for="bfReturn">Return Date</label>
+          <input type="date" id="bfReturn" name="return">
+          <span class="form__error" id="err-return"></span>
+        </div>
+      </div>
+      <div class="form__field">
+        <label for="bfMessage">Message <span class="optional">(optional)</span></label>
+        <textarea id="bfMessage" name="message" rows="3" placeholder="Any additional details..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold btn--block">Send Booking Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="#" class="fab-whatsapp js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query." aria-label="Chat with us on WhatsApp">
+  <svg class="icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 2.67C8.66 2.67 2.7 8.63 2.7 16c0 2.53.7 4.9 1.93 6.93L2.67 29.3l6.55-1.9A13.27 13.27 0 0 0 16.02 29.3c7.36 0 13.32-5.96 13.32-13.33S23.38 2.67 16.02 2.67z"/></svg>
+  <span class="fab-whatsapp__text">Chat With Us</span>
+</a>
+
+<!-- ============ MOBILE BOTTOM BAR ============ -->
+<nav class="mobile-bar" aria-label="Quick actions">
+  <a href="tel:+919034749493" class="mobile-bar__item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="#" class="mobile-bar__item js-whatsapp-link" data-msg="Hello Black Horse Car Rental, I have a query.">
+    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 2.67C8.66 2.67 2.7 8.63 2.7 16c0 2.53.7 4.9 1.93 6.93L2.67 29.3l6.55-1.9A13.27 13.27 0 0 0 16.02 29.3c7.36 0 13.32-5.96 13.32-13.33S23.38 2.67 16.02 2.67z"/></svg>
+    WhatsApp
+  </a>
+  <button class="mobile-bar__item mobile-bar__item--cta js-open-modal">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+    Book Now
+  </button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
